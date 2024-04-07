@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ngunnawal Care | Your home of quality care</title>
+  <meta name="title" content="Ngunnawal Care | Your home of quality care">
+  <meta name="description" content="Ngunnawal Care | Your home of quality care">
+
+  <!-- 
+    - favicon
+  -->
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="assets/fonts/font.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-C9eOrpeehgureS6K03B5tIFKW4jkKJKFqWTCXgd4vGlpM/OdnFJepoBFLcgGxYk8" crossorigin="anonymous">
+  <link rel="Shortcut Icon" type="image/ico" href="assets/images/favicon.svg">
+
+  <!-- 
+    - preload images
+  -->
+
+
+</head>
+
+
+<body id="top">
+<div class=" preload-box" data-preloader>
+    <img src="assets/images/loading.svg" width="45" height="45" alt="loading">
+
+    <img src="assets/images/loading-circle.svg" width="75" height="75" alt="loading" class="preload-circle">
+  </div>
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="" class="logo">
+        <img src="assets/images/logo2.svg" width="110" height="30" alt="Ngunnawal Care home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="services.html" class="navbar-link">Our Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">FAQ</a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+
+        <a href="tel:+61406658049" class="contact-number">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">040 665 80 49</span>
+        </a>
+
+        <a href="javascript:void(0);" class="btn btn-primary" id="contactUsBtn">
+          <span class="span">Contact Us</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+
+  <div id="modal-container">
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <!-- Contact details of the company -->
+            <h2>Contact Us</h2>
+    
+            <a href="tel:+61406658049" class="contact-number">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                <span class="span">040 665 80 49</span>
+            </a>
+            <a href="mailto:info@ngunnawal.com.au" class="contact-number">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <span class="span">info@ngunnawal.com.au</span>
+            </a>
+            <div style="width: 100%">
+                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=20%20Castagna%20Street,%20Strathnairn,%202615,%20ACT,%20Australia+(Ngunnawal%20Care%20Services)&amp;t=h&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            <span class="close-btn" id="closeModal">&times;</span>
+        </div>
+    </div>
+  </div>
+  </header>
+
+
+  <main>
+      <article>
+          <section class="section hero" aria-label="home">
+              <div class="container" style="margin-bottom: 3%;">
+                <div class="hero-background">
+                  <!-- Individual background images will be added here dynamically -->
+                </div>
+                <div class="logo-container">
+  
+                  <img src="assets/images/ndis.png" alt="Logo" class="hero-logo">
+              </div>
+                <div class="hero-content" data-reveal="left">
+                  <h1 class="h1 hero-title typing-text">
+                    <span class="welcome-to-navbar" style="text-align: center;">Welcome to</span> Ngunnawal Care
+                  </h1>
+                  <p class="typed-text">Where compassion meets care</p>
+  
+                  <button id="enquiryBtn" class="btn btn-primary" style="margin-top: 6%;">
+                      <span class="span">Enquire Now</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+                <div class="scroll-down-arrows">
+                  <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                  <ion-icon name="chevron-down-outline" class="arrow"></ion-icon>
+                </div>
+              </div>
+            </section>
+
+            <section class="section enquiry-form" id="enquiryForm">
+                <div class="container">
+                    <form class="enquiry-form-content" onsubmit="sendEmail(); reset(); return false;">
+                        <!-- Close button -->
+                        <button type="button" class="close-btn" onclick="closeForm()">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+    
+                        <h2 class="form-title">Contact Us</h2>
+                        <!-- Name field -->
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+    
+                        <!-- Phone field -->
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+    
+                        <!-- Email field -->
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                        </div>
+    
+                        <!-- Message field -->
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                        </div>
+    
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </section>
+          
+  
+            <section class="section about mt-2" aria-labelledby="about-label">
+              <div class="container" style="margin-top: 5%;">
+      
+                <figure class="about-banner" data-reveal="left">
+                  <img src="assets/images/about.jpeg" width="380" height="382" loading="lazy" alt="about banner"
+                    class="w-100 img-1">
+  
+                  </figure>
+      
+                <div class="about-content" data-reveal="right">
+      
+                  <p class="section-subtitle has-before" id="about-label">About Us</p>
+      
+                  <h2 class="h2 section-title">
+                    We are the best registered NDIS provider in A.C.T.
+                  </h2>
+      
+                  <p class="section-text">
+                    Our mission is to provide quality services, including care, accommodation, support and assistance which will enable people to live a life of dignity and independence. 
+                  </p>
+      
+                  <div class="about-wrapper">
+      
+                    <div class="about-card">
+      
+                      <div class="title-wrapper">
+                        <ion-icon name="bonfire-outline" aria-hidden="true"></ion-icon>
+      
+                        <h3 class="card-title">Our Vision</h3>
+                      </div>
+      
+                      <p class="card-text">
+                        We believe that every person should have equal quality of life and the opportunity to stay productive in their community.
+                      </p>
+      
+                    </div>
+      
+                    <div class="about-card">
+      
+                      <div class="title-wrapper">
+                        <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+      
+                        <h3 class="card-title">Our Purpose</h3>
+                      </div>
+      
+                      <p class="card-text">
+                        We help people with disability, mental health, homeless and ageing be more independent, 
+                        find work, study and have greater choice and control over how they want to live their life. 
+                      </p>
+      
+                    </div>
+      
+                  </div>
+                  <a href="about.html" class="btn btn-primary">
+                    <span class="span">Read More</span>
+      
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+      
+                </div>
+      
+              </div>
+            </section>
+  
+  
+            <section class="section stats" aria-label="statistics">
+              <div class="container">
+      
+                <div class="stats-banner" data-reveal>
+                  <img src="assets/images/interraction.jpeg" width="1398" height="565" loading="lazy" alt="video banner"
+                    class="img-cover">
+      
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+      
+              </div>
+            </section>
+  
+            
+            <section class="section our-services service" aria-labelledby="service-label">
+              <div class="container">
+                  <p class="section-subtitle has-before" id="service-label" data-reveal>Our services</p>
+          
+                  <h2 class="h2 section-title" data-reveal>
+                      The things we do makes us stand out!
+                    </h2>
+                <div class="services-grid">
+                  <div class="services-grid">
+                    <div class="service-item">Domestic Assistance</div>
+                    <div class="service-item">Personal Care</div>
+                    <div class="service-item">Nursing at Home</div>
+                    <div class="service-item">Respite Care</div>
+                    <div class="service-item">Short Term Restorative Care</div>
+                    <div class="service-item">Transition Care</div>
+                    <div class="service-item">Transport</div>
+                    <div class="service-item">Case Management</div>
+                    <div class="service-item">Home Maintenance and Gardening</div>
+                    <div class="service-item">Social Support</div>
+                    <div class="service-item">Home Modifications</div>
+                    <div class="service-item">Health and Well Living Assessments</div>
+                    
+                  </div>
+            </section>
+  
+  
+            <section class="section stats" aria-label="statistics">
+              <div class="container">
+      
+                <div class="stats-banner" data-reveal>
+                  <img src="assets/images/animation.jpeg" width="1398" height="565" loading="lazy" alt="video banner"
+                    class="img-cover">
+      
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+      
+              </div>
+            </section>
+            
+          
+  <style>
+
+  
+  </style>    
+   
+      </article>
+  </main>
+  
+  
+  <script>
+      // Wait for the DOM to be ready
+      document.addEventListener('DOMContentLoaded', function () {
+          // Get the button and form elements
+          var enquiryBtn = document.getElementById('enquiryBtn');
+          var enquiryForm = document.getElementById('enquiryForm');
+  
+          // Add click event listener to the button
+          enquiryBtn.addEventListener('click', function (event) {
+              // Show the form
+              enquiryForm.style.display = 'block';
+              // Optionally, prevent the default form submission behavior
+              event.preventDefault();
+          });
+      });
+  </script>
+  
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section" data-reveal>
+
+        <div class="newsletter-card">
+
+          <div class="card-icon">
+            <ion-icon name="mail-unread-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <h3 class="h3 card-title">Stay Updated with Our Latest News and Insights</h3>
+
+          <form action="#" class="newsletter-form">
+
+            <label for="email" class="label">Email address</label>
+
+            <input type="emal" name="email" id="email" placeholder="Email address" required class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+
+          </form>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="h6 has-after">Ngunnawal Care Services</p>
+
+          <p class="footer-text">
+            Our commitment to excellence has made us a trusted choice for families seeking compassionate care for their loved ones. 
+          </p>
+
+          <a href="#" class="btn-outline">
+            <span class="span">Get a quote</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h6 has-after">Company Info</p>
+          </li>
+
+          <li>
+            <a href="about.html" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms and Conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h6 has-after">Quick Contact</p>
+          </li>
+
+          <li>
+            <address class="footer-text">
+              <p>20 Castagna Street, </p>
+              <p>Strathnairn 2615 ACT </p>
+            </address>
+          </li>
+
+          <li>
+            <p class="footer-text">
+              If you have any questions or need help, feel free to contact with our team.
+            </p>
+          </li>
+
+          <li>
+            <a href="tel:+61406658049" class="contact-link">040 665 80 49</a>
+          </li>
+<!--
+          <ul class="social-list">
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+  
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+  
+          </ul>
+-->
+        </ul>
+
+
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+
+      <div>
+        <ul class="footer-bottom-list">
+
+          <li>
+            Ngunnawal Care Services 
+          </li>
+          <li>
+            ABN 94876969244 
+          </li>
+          <li>
+            &copy; 2024
+          </li>
+
+        </ul>
+      </div>
+
+ <small> We acknowledge the Australian Aboriginal and Torres Strait Islander peoples as the first people of the nation and the traditional custodians of the lands where we live, learn and work.
+      </small>
+       
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="go to top" data-go-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+<script>
+    // Get the modal element
+    var modal = document.getElementById("contactModal");
+    var contactUsBtn = document.getElementById("contactUsBtn");
+    var closeModalBtn = document.getElementById("closeModal");
+    contactUsBtn.onclick = function() {
+      modal.style.display = "block";
+    }
+    closeModalBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+
+
+</html>
